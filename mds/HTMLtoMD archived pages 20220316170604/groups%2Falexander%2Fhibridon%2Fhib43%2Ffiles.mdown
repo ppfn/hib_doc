@@ -1,0 +1,109 @@
+files
+
+
+###   Files and JOB Variable
+
+
+------------------------------
+
+
+All files created by the Hibridon  TM   package are given lower case names
+
+with the first character in upper case.
+
+
+All files written during a calculation, except the main    file,
+
+are
+
+designated  {jobname}n.ext , where  n  denotes the energy at which the
+
+calculation has been carried out ( n  = 1 for first energy,  n  = 2 for second
+
+energy, etc.) and the file extension  ext  can be
+
+
+ics  for integral cross sections (created if the flag  [WRXSEC](prxsec.html)   is set  .true.  and a
+
+necessary prerequisite to the command
+
+[PRINTC](printc.html)  )
+
+
+xsc  for selected integral cross sections (created by the command  [PRINTC](printc.html)  )
+
+
+smt  for  S  matrix elements (created if the flag  [WRSMAT](prsmat.html)   is set  .true.  or
+
+by the command  [OPTIMIZE](optimize.html)  ; a necessary prerequisite to the commands
+
+[PRINTS](prints.html)   and  [DIFCRS](difcrs.html)  )
+
+dcs  for differential cross sections (created by the command  [DIFCRS](difcrs.html)  )
+
+
+pcs  for partial cross sections (created if the flag  [WRPART](prpart.html)   is set  .true. )
+
+
+psc  for partial cross sections as output of the command  [PARTC](partc.html)  )
+
+
+tcb  for a table of tensor cross sections (as output of the command
+
+[TENXSC](tenxsc.html)   and necessary prerequisite for the command  [MRCRS](mrcrs.html)  )
+
+
+tcs  for tensor cross sections (as output of the command  [TENXSC](tenxsc.html)  )
+
+
+mcs  for a table of m-resolved integral cross sections (as output
+
+of the command  [MRCRS](mrcrs.html)  )
+
+
+wfu  for wavefunction transformation matrices (created if the flag  [WAVEFL](wavefl.html)
+
+is set  .true.  and  a necessary prerequisite to the commands
+
+[FLUX](flux.html)  ,  [EADIAB](eadiab.html)  , and  [PSI](psi.html)  )
+
+
+psi  for scattering wavefunctions (created by the command  [PSI](psi.html)  )
+
+
+flx  for fluxes or adiabatic energies (as output of the commands  [FLUX](flux.html)
+
+and  [EADIAB](eadiab.html)  )
+
+
+------------------------------
+
+
+The jobname is set by the variable
+
+
+JOB={jobname},
+
+
+where  {jobname}  is a character string (not in quotes). The default value
+
+of  {jobname}  is  Job
+
+
+![](cautionsmall.gif)  Both  {jobname}  and the file extensions are converted internally
+
+to lower case with the first character of  {jobname}  in upper case.
+
+
+![](cautionsmall.gif)  All of the above files are formatted,  except  the  .smt ,  .tcb , and  .wfu
+
+files which are unformatted (binary).
+
+
+------------------------------
+
+
+Go to:
+
+
+[Input](input.html)   |  [Output](output.html)   |  [Commands](commands.html)   |  [Parameters](params.html)   |  [Flags](flags.html)   |  [Hibridon Help](hibhelp.html)

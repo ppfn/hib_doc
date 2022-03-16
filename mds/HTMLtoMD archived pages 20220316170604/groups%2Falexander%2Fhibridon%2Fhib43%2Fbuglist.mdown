@@ -1,0 +1,26 @@
+flux
+
+
+###   Hibridon [TM](copyright.html)       Buglist
+
+
+------------------------------
+
+
+This file contains the current list of known bugs and omissions in
+
+the Hibridon [TM](copyright.html)       HTML help facility.  The list of current bugs in the
+
+source code
+
+is contained in the file  buglist  in the main Hibridon directory
+
+
+------------------------------
+
+
+1. 21-apr-1996:  tenxsc.ex.html testpot.ex.html not finished
+
+
+------------------------------
+[Top](buglist.html)    |  [Hibridon help](hibhelp.html)

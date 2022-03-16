@@ -1,0 +1,88 @@
+Release Notes
+
+
+###   History of the Hibridon  TM   Package
+
+
+------------------------------
+
+
+1997:   Version 4.1 (Release Date 1-May)
+
+
+1996:	Version 4.0 (Release Date 20-April)
+
+
+1993:	Version 3.7 (Release Date 1-June)
+
+
+1993:	Version 2.7 (Release Date 1-March)
+
+
+1991:	Version 2.5 (Release Date 1-March)
+
+
+1987:	Version 1.1 (Release Date 1-June)
+
+
+1987:	Version 1.0 (Release Date 1-March)
+
+
+The Hibridon  TM   package has been an essential tool in the research described
+
+in the Ph. D. dissertations of the following students:
+
+
+1. Peter Vohralik, 1986 (University of Washington)
+
+2. Jane Smedley, 1987 (University of Maryland)
+
+3. Didier Lemoine, 1987 (Université de Lille, France)
+
+4. Andreas Jörg, 1990 (Universität Stuttgart, Germany)
+
+5. Bernd Follmeg, 1990 (Universität Frankfurt, Germany
+
+6. Claire Rist, 1991 (Université de Grenoble, France)
+
+7. Leslie Rawluk, 1993 (University of Alberta, Canada)
+
+8. Moonbong Yang, 1994 (University of Washington)
+
+9. Thierry Duhoo, 1994 (Université de Lille, France)
+
+:. Susan Gregurick, 1994 (University of Maryland)
+
+;. Andreas Berning, 1995 (Universität Stuttgart, Germany)
+
+<. Gerritt van der Sanden, 1996 (Universiteit Nijmegen, The Netherlands)
+
+=. Freddy de Weerd, 1996 (Universiteit Nijmegen, The Netherlands)
+
+
+as well as in the training of the following postdoctoral fellows:
+
+
+1. Gregory Corey, 1986-9 (University of Maryland)
+
+2. Peter Vohralik, 1988-9 (University of Washington)
+
+3. Alessandra Degli-Esposti, 1989-90 ((Universität Bielefeld, Germany)
+
+4. William Kearney, 1991-2 (University of Maryland)
+
+5. Claire Rist, 1992-4 (University of Maryland)
+
+6. Angeliki Vegiri, 1993-4 (University of Maryland)
+
+7. Steven Miller, 1994-5 (University of Maryland)
+
+8. Patrick McCabe, 1994-6 (University of Manchester, UK)
+
+9. Moonbong Yang, 1995-7 (University of Maryland)
+
+
+------------------------------
+
+
+[](hibhelp.html) [](up_arrow.gif)  Return to  [Hibridon Help](hibhelp.html)

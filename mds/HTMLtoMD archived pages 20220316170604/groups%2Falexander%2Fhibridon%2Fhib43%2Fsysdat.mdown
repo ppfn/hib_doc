@@ -1,0 +1,30 @@
+system
+
+
+###   Subroutine Sysdat
+
+
+------------------------------
+
+
+The subroutine SYSDAT controls the I/O of all system dependent parameters as
+
+well as the parameters NTERM, LAMMIN, LAMMAX, and MPROJ.
+
+
+Currently the
+
+Hibridon  TM   package contains SYSDAT subroutines for different
+
+collision systems described in more detail in the  [Systems](system.html)
+
+help file.
+
+
+See also the  [BASIS](basis.html)   help file.
+
+
+------------------------------
+
+
+[](hibhelp.html) [](up_arrow.gif)  Return to  [Hibridon Help](hibhelp.html)

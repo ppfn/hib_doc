@@ -1,0 +1,208 @@
+system
+
+
+###   Collision Systems
+
+
+------------------------------
+
+
+In addition to the general parameters, input parameters must be supplied
+
+to define the particular collision system to be treated and to
+
+control the choice of channels and internal energies.
+
+Currently the Hibridon  TM   package can accomodate the following collision systems:
+
+(click the button for a further description of the system variables in each case)
+
+
+For systems (1) - (7), (9), and (11) below, by setting the  [flag](flags.html)
+
+[FLAGSU](flagsu.html)   = .TRUE., it is possible to treat the collision of the
+
+partner (atom or molecule) with internal structure with a flat, rigid surface.
+
+
+[](ba1sg.html) [](rightarrow.gif)
+
+1.
+
+A  1  ![](sigma12.gif)  Molecule and a Spherical Atom
+
+
+Ref.  W. A. Lester, Jr., Meth. Comput. Phys.  10 , 211 (1971).
+
+
+------------------------------
+
+
+[](ba2sg.html) [](rightarrow.gif)
+
+2. A  2  ![](sigma12.gif)  Molecule and a Spherical Atom
+
+
+Ref.  M. H. Alexander, J. Chem. Phys.  76 , 3637 (1982).
+
+
+------------------------------
+
+
+[](ba2pi.html) [](rightarrow.gif)
+
+3.
+
+A  2  ![](pismall.gif)  Molecule and a Spherical Atom
+
+
+Ref.  M. H. Alexander, J. Chem. Phys.  76 , 5974 (1982);
+
+M. H. Alexander, Chem. Phys.  92 , 337 (1985);
+
+G. C. Corey and M. H. Alexander, J. Chem. Phys.  85 , 5652 (1986).
+
+
+------------------------------
+
+
+[](basgpi.html) [](rightarrow.gif)
+
+4. Collisional mixing of a  2  ![](pismall.gif)  and  2  ![](sigma12.gif)  State of a Diatomic Molecule induced by a Spherical Atom
+
+
+Ref.  M. H. Alexander and G. C. Corey, J. Chem. Phys.  84 , 100 (1986);
+
+H.-J. Werner, B. Follmeg, M. H. Alexander, and D. Lemoine,  ibid.   91 , 5425 (1989).
+
+
+------------------------------
+
+
+[](bapi.html) [](rightarrow.gif)
+
+5. Collisions of a Molecule in a  1  ![](pismall.gif) ,  2  ![](pismall.gif) , or  3  ![](pismall.gif)  State with a Spherical Atom
+
+
+Ref.  M. H. Alexander, J. Chem. Phys.  76 , 5974 (1982);
+
+M. H. Alexander, Chem. Phys.  92 , 337 (1985);
+
+G. C. Corey and M. H. Alexander, J. Chem. Phys.  85 , 5652 (1986);
+
+D. Lemoine, G. C. Corey, M. H. Alexander, and J. Derouard, Chem. Phys.  118 , 357 (1987).
+
+
+------------------------------
+
+
+[](bastp.html) [](rightarrow.gif)
+
+6. A Symmetric Top Molecule and a Spherical Atom
+
+
+Ref.  S. Green, J. Chem. Phys.  64 , 3463 (1976);  67 , 816 (1979).
+
+
+------------------------------
+
+
+[](ba13p.html) [](rightarrow.gif)
+
+
+7. An Atom in a  1  P  and/or  3  P  state and a Spherical Atom
+
+
+Ref.  B. Pouilly, T. Orlikowski, and M. H. Alexander, J. Phys. B  18 , 1953 (1985);
+
+B. Pouilly and M. H. Alexander, J. Chem. Phys.  86 , 4790 (1987);
+
+B. Pouilly, J.-M. Robbe, and M. H. Alexander,  ibid.   91 , 1658 (1989).
+
+
+------------------------------
+
+
+[](ba2mol.html) [](rightarrow.gif)
+
+8. Two  1  ![](sigma12.gif)  Diatomics
+
+
+Ref.  S. Green, J. Chem. Phys.  62 , 2271 (1975);
+
+A. E. DePristo and M. H. Alexander,   ibid.   66 , 1334 (1977);
+
+M. H. Alexander,   ibid.   73 , 5135 (1980).
+
+
+------------------------------
+
+
+[](bastp.html) [](rightarrow.gif)
+
+9. A Symmetric top and a Linear Molecule in  a  1  ![](sigma12.gif)
+
+State
+Ref.  C. Rist, M. H. Alexander, and
+
+P. Valiron, J. Chem. Phys.  98 , 4662 (1993).
+
+
+------------------------------
+
+
+[](ba22p.html) [](rightarrow.gif)
+
+:. Collisions of an atom in a  2  P  state and an atom in a  2  S
+
+electronic state
+
+
+Ref.  M. H. Alexander, B. Pouilly, and T. Duhoo, J. Chem. Phys.  99 , 1752 (1993).
+
+
+------------------------------
+
+
+[](ba1del.html) [](rightarrow.gif)
+
+;. A  1  ![](deltasmall.gif)  molecule + spherical atom
+
+
+Ref.  D. G. Sauder, D. Patel-Misra, and P. J. Dagdigian, J. Chem. Phys.  91 , 5316 (1989).
+
+
+------------------------------
+
+
+[](bah2p.html) [](rightarrow.gif)
+
+<. An atom in a  2  P  electronic state and a Homonuclear Diatomic
+
+
+Ref.  M.-L. Dubernet and J. M. Hutson, J. Chem. Phys.  101 ,
+
+1939 (1994).
+
+
+------------------------------
+
+
+To view the list of parameters required in each case, enter the
+
+commands
+
+
+BASISTYP=n  (where  n  is one of the above numbers)
+
+
+SHOW
+
+
+See also the  [BASIS](basis.html)   and  [SYSDAT](sysdat.html)   help files.
+
+
+------------------------------
+
+
+[](hibhelp.html) [](up_arrow.gif)  Return to  [Hibridon Help](hibhelp.html)

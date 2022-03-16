@@ -1,0 +1,99 @@
+ba1del
+
+
+###   Basis Subroutine
+
+and System Specific Parameters: Collisions between
+
+a  1 Delta Molecule and a Spherical Atom
+
+
+------------------------------
+
+
+BASISTYPE = 11
+
+
+System subroutine:  sy1del
+
+
+Basis subroutine:  hiba1del.f
+
+
+Ref.  D. G. Sauder, D. Patel-Misra, and P. J. Dagdigian, J. Chem. Phys.  91 , 5316 (1989).
+
+
+------------------------------
+
+
+The definition of the  integer  system dependent parameters is as follows:
+
+NTERM (the number of potential surfaces involved:  this should be 2
+
+in this case).  This parameter can not be changed
+
+
+NPAR:  number of lambda-doublet components included
+
+If NPAR = 1,   just  ![](eps12.gif)  = +1 states are included
+
+
+If NPAR .ne. 1, both  ![](eps12.gif)  = +1 and  ![](eps12.gif)  = - 1 states are included
+
+
+JMAX:     maximum rotational quantum number
+
+
+IGU:  inversion symmetry of states included in expansion.
+
+
+IGU = +1 for  gerade  states
+
+
+IGU = -1 for  ungerade  states
+
+
+for heteronuclear molecules IGU should be +1
+
+
+ISA:  Nuclear permutation symmetry ( s/a  label) of states
+
+included in the expansion.
+
+
+If the  [flag](flags.html)    [IHOMO](flaghf.html)   is .TRUE.,
+
+then only
+
+s  states will be included if ISA = +1 and only  a  states if
+
+ISA = -1
+
+
+------------------------------
+
+
+The definition of the  real  system dependent parameters is as follows:
+
+
+BROT:    rotational constant
+
+
+Q:    lambda-doubling constant
+
+
+------------------------------
+
+
+The system dependent input paramaters are as follows:
+
+line 1 :  JMAX, IGU, ISA, NPAR
+
+
+line 2 :  BROT, Q
+
+
+------------------------------
+
+
+[](hibhelp.html) [](up_arrow.gif)   Return to  [Hibridon Help](hibhelp.html)

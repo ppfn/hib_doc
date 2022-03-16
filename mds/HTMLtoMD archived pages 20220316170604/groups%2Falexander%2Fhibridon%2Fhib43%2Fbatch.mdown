@@ -1,0 +1,104 @@
+batch
+
+
+###   Batch Mode and Background Execution
+
+
+------------------------------
+
+
+To run the Hibridon  TM   package in batch mode, set up a run stream with BATCH as
+
+the first line.  This supresses the input line query   Hibridon   . All other
+
+commands will be read from the run stream and executed.   An example would
+
+be:
+
+
+BATCH
+
+
+PRINTS,job1            print, into the log file,  S  matrices from the
+
+file  Job1.smt  (see the help file for the command
+
+[PRINTS](prints.html)  )
+
+INP={input}            read parameters and flags from file {input}
+
+OUT={outfile}          file {outfile} will be opened as the output file
+
+JOB={jobname}           S  matrices, partial cross sections, integral
+
+cross sections will be saved in files
+
+{jobname}.ext  where  ext =.smt, pcs, ics,  etc
+
+RSTART=3.5             reset the parameter  [RSTART](rendld.html)
+
+RUN                    run a scattering calculation with the new
+
+parameter set
+
+EXIT
+
+
+Note that on many systems it may be necessary to specify a pathname as well
+
+as a file name for  {input}, {outfile}, {jobname}  unless the corresponding
+
+files are located in your current directory.
+
+
+Alternatively, running scattering calculations in the background can be accomplished
+
+by first defining a command file which contains the input commands.  Following the above
+
+example, we would define a command file  runner.com , say, which would contain
+
+the following lines
+
+
+INP={input}
+
+
+PRINTS,job1
+
+
+OUT={outfile}
+
+
+JOB={jobname}
+
+
+RSTART=3.5
+
+
+RUN
+
+
+EXIT
+
+
+The, after making the command file executable
+
+
+chmod +x runner.com
+
+
+You would execute the command
+
+
+hib_xx   runner.log &
+
+
+Where  hib_xx  is the name of your executable code (see the  [LINKING](linking.html)
+
+help file), and the file  runner.log  will contain a log of the execution.
+
+
+------------------------------
+
+
+[](hibhelp.html) [](up_arrow.gif)   Return to  [Hibridon Help](hibhelp.html)

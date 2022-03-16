@@ -1,0 +1,177 @@
+New
+
+
+###   New Features
+
+
+------------------------------
+
+
+In addition to several important bug fixes, version 4.2 of the
+
+Hibridon code has the following new features:
+
+
+- An updated module ( hitensor.f ) for the determination of tensor cross sections
+
+and  M -dependent cross sections.
+
+
+- A component ( hibound.f ) for the determination of weakly-bound complexes involving
+
+atomic and/or molecular radicals, provided that the interaction potential can be
+
+expanded in the same  [form](potlist.html)   as used for molecular scattering.
+
+
+- An option, when linking the code, to exclude certain functions in exchange for an
+
+ability to handle a larger number of channels
+
+
+- Documentation of the option allowing the  [restart](restart.html)   of a long-running calculation after
+
+a power failure or system crash
+
+
+The on-line ( doc/hibrid.hlp ) and .html-based ( doc/index.html ) help facilities have been
+
+revised to include help on these items as well as examples.
+
+
+Version 4.2 of the code includes:
+
+
+- Extension to Apple's G4 and G5 processor workstations running OSX 10.3 (Panther).  In order to compile
+
+and link on Apple workstations, you will need to have:
+
+
+- The   [IBM XL Fortran Compiler (XLF)](http://www.absoft.com/xlf/index.htm) (XLF)  available from  [Absoft](http://www.absoft.com/xlf.html)
+
+
+- The Mac OS X Developer Tools package, which includes gcc Version 3.3.
+
+The package is available from the Apple Developer Connection   [Website](http://connect.apple.com/)  .  In particular, Xcode Tools v1.0 or later is required.
+
+
+- Replacement of many matrix-matrix: routines with calls to version 3.0
+
+[Lapack](http://www.netlib.org/lapack/lug/lapack_lug.html)   routines.
+
+
+------------------------------
+
+
+In addition to the changes mentioned above for version 4.2, version 4.3 of the Hibridon code has
+
+the following new features:
+
+
+- The possibility of doing calculations at up to 25 different collision  [energies](energ.html)  , which
+
+may be chosen on a regularly spaced linear grid.
+
+
+- Two possibilities for formatting the integral cross section files arising from the commands
+
+[PRINTC](printc.html)     and  [INTCRS](intcrs.html)    .
+
+
+- A new command,  [SYSCONF](sysconf.html)     (and an equivalent shell command  [hib_sysconfig](sysconf.html)    ) which prints out the key details
+
+of your current operating system.
+
+
+The on-line ( doc/hibrid.hlp ) and .html-based ( doc/index.html ) help facilities have been
+
+revised to include help on these items as well as examples.
+
+
+------------------------------
+
+
+Version 4.3 of the code has been developed for (and tested on) the following platforms:
+
+
+- Apple's G4 and G5 processor workstations running OSX 10.3 (Panther) and 10.4 (Tiger).  In order to compile
+
+and link on Apple G4 and G5 workstations, you will need to have:
+
+
+- The   [IBM XL Fortran Compiler (XLF)](http://www.absoft.com/Products/Compilers/Fortran/Mac/XLF/xlf.html) (XLF)  available from  [Absoft](http://www.absoft.com/Products/Compilers/Fortran/Mac/XLF/xlf.html)     ![](warningsmall.gif)    Note, despite the indication
+
+on Absoft's  [web page](http://www.absoft.com/Products/Compilers/Fortran/Mac/XLF/xlf.html)   that IBM XL Fortran v8.1 for Mac OS X is not supported on Mac OS X Version 10.4 - Tiger,
+
+the Hibridon package does install, compile, and execute correctly under OSX 10.4.10 and 10.4.11 with XLF8.1.     Hibridon is no longer actively
+
+maintained on Apple PowerPC platforms.
+
+
+- The current version of Mac OS X Developer Tools package.
+
+Under OS X 10.5 and 10.6 this package is available from the Apple Developer Connection   [Website](http://connect.apple.com/)  .  Under System 10.7 (Lion) the Xcode Tools package is available directly from the  [App Store](http://www.apple.com/mac/app-store/)
+
+
+.
+
+
+- Apple Intel platforms running OSX 10.4 (Tiger) and 10.5.1 (Leopard).  In order to compile
+
+and link on Apple Intel platforms, you will need to have:
+
+
+- The
+
+Intel  [Fortran Compiler](http://www.intel.com/cd/software/products/asmo-na/eng/compilers/267426.htm)    (ifort).
+
+
+- The Mac OS X Developer Tools package.
+
+The package is available from the Apple Developer Connection   [Website](http://connect.apple.com/)  .  In particular, the current version of Xcode Tools is required.
+
+Under System 10.7 (Lion) this is available directly from the  [App Store](http://www.apple.com/mac/app-store/)
+
+
+- Intel Xeon (x86) based platforms running under Linux (installation under Red Hat v. 4 has
+
+been explicitly tested).
+
+Compilation, linking, and execution of Hibridon v. 4.3 has been successful with
+
+
+- The Intel ifort compiler and  MKL mathematics library
+
+- The Portland Group pgf95 compiler and ACML mathematics library
+
+
+The major computational effort in calculations with the Hibridon code is associated with
+
+a series of matrix-matrix (BLAS3) operations (matrix inversions, diagonizations, and multiplications), which
+
+are carried out by calls to the  [LAPACK](www.netlib.org/lapack)   routines DGERF, DGETRI, DSYEVR, and DGEMM.
+
+The latest version
+
+of Intel's ( [MKL](http://support.intel.com/support/performancetools/libraries/mkl/)   math library as well as
+
+of Apple's veclib (/System/Library/Frameworks/Accelerate.framework/Versions/Current) include, automatically,
+
+parallelized versions of these LAPACK routines, so that considerable performance enhancement can be
+
+achieved when running on multi-cpu, multi-core workstations.  A more in-depth discussion is given
+
+on a separate  [page](parallel.html)  .
+
+
+------------------------------
+
+
+Go to
+
+
+[Installation](install.html)   |  [Benchmarks](timing.html)   |
+
+[Downloading](install.html)   |   [Memory Limits](memory.html)   |
+
+[Restarting](restart.html)   |  [Timing](timing.html)   |  [Parallelism](parallel.html)   |  [Linking](linking.html)   |  [Hibridon Help](hibhelp.html)

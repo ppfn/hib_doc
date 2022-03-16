@@ -1,0 +1,21 @@
+partc.ex
+
+
+###  Example of the command PARTC
+
+------------------------------
+
+
+![](construction.gif)
+
+
+This help file is not yet finished
+
+
+------------------------------
+
+
+Return to:
+
+
+[Commands](commands.html)   |  [Examples](examples.html)   |  [Hibridon Help](hibhelp.html)

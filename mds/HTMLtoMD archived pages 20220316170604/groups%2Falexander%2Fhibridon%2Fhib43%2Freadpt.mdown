@@ -1,0 +1,25 @@
+readpt
+
+
+###   Flag READPT
+
+
+------------------------------
+
+
+If  READPT = .TRUE. , then the  [potential](potlist.html)   subroutine is expecting to
+
+read data stored in a file whose name is given on the last line of
+
+the  [input](input.html)   data file.
+
+
+If READPT = .FALSE., then the last line of the INPUT data file is
+
+ignored.
+
+
+------------------------------
+
+
+[](hibhelp.html) [](up_arrow.gif)  Return to  [Hibridon Help](hibhelp.html)

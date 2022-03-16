@@ -1,0 +1,28 @@
+units
+
+
+###   Units
+
+
+------------------------------
+
+
+The internal units of length and energy are both  atomic units , namely
+
+bohr and hartree, respectively.  The user should be aware of this when constructing
+
+a new  [pot](potlist.html)   subroutine.
+
+
+![](cautionsmall.gif)  However , cross sections are printed and written out in units of square Ångstroms.
+
+
+------------------------------
+
+
+Go to:
+
+
+[BASIS routines](basis.html)   |  [Systems](system.html)   |
+
+[Potentials](potlist.html)   |  [SYSDAT](sysdat.html)   |  [(null)](hibhelp.html)

@@ -1,0 +1,49 @@
+flags
+
+
+###   FLAGS
+
+
+------------------------------
+
+
+The scattering calculation is controlled by a number of logical flags
+
+
+To change values of flags, enter the command
+
+
+FLAG1=VAL1,FLAG2=VAL2  etc.
+
+
+different flags can be separated by commas or by semicolons.
+
+
+The Hibridon input driver is not case sensitive, so flags can be entered in
+
+either upper or lower case.  Flags may be abbreviated, although you will
+
+have to expand the abbreviation the flag if there is an ambiguity.
+
+
+The default values of the various flags are:
+
+
+[AIRYFL](airyfl.html)  =T     [BASTST](bastst.html)  =F     [BATCH](batch.html)   =F     [BOUNDC](bound.html)  =F     [CHLIST](noprin.html)  =T     [CSFLAG](csflag.html)  =F
+
+[FLAGHF](flaghf.html)  =F     [FLAGSU](flagsu.html)  =F     [IHOMO](ihomo.html)   =T    IPOS  =F     [LOGDFL](logdfl.html)  =T     [NOPRIN](noprin.html)  =F
+
+[NUCROS](nud.html)  =F     [PHOTOF](photof.html)  =F     [PRAIRY](airyfl.html)  =F     [PRLOGD](logdfl.html)  =F     [PRPART](prpart.html)  =F     [PRSMAT](prsmat.html)  =F
+
+[PRT2](prt2.html)  =  T     [PRXSEC](prxsec.html)  =T    READPT=F    RSFLAG=F     [T2TEST](prt2.html)  =F     [TWOMOL](ihomo.html)  =F
+
+[WAVEFL](wavefl.html)  =F     [WRPART](prpart.html)  =F     [WRSMAT](prsmat.html)  =T     [WRXSEC](prxsec.html)  =F
+
+
+See also the  [BASIS](basis.html)   and  [SYSDAT](sysdat.html)   help files.
+
+
+------------------------------
+
+
+[](hibhelp.html) [](up_arrow.gif)   Return to  [Hibridon Help](hibhelp.html)

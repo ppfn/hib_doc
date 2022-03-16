@@ -1,0 +1,56 @@
+lamin
+
+
+###   PARAMETERS LAMIN, LAMAX, and MPROJ
+
+
+------------------------------
+
+
+In most scattering problems the potential is expanded as
+
+
+V(R ,theta) =  V  00 ( R ) +
+
+![](sigma18.gif)  [  V  lambda ( R )  x   f  1 (theta)] +
+
+
+![](sigma18.gif)  [  V  lambda ( R )  x   f  2 (theta)] + ...
+
+
+where  f i  (theta) can designate ordinary or associated Legendre polynomials,
+
+spherical harmonics, etc. The number of different sums is given by the
+
+parameter NTERM.   For each different
+
+sum the minimum value of the expansion index is given by LAMMIN(i), the
+
+maximum values of the expansion index, by LAMMAX(i), and the order of the
+
+associated Legendre polynomials (or spherical harmonics) by MPROJ(i).
+
+
+![](warning.gif)  The
+
+values of NTERM, LAMMIN, and LAMMAX cannot be changed; for any given system they are
+
+set in
+
+the LOAPOT subroutine.
+
+
+Likewise, the
+
+values of MPROJ cannot be changed; for any given system they are set in
+
+the system input subroutine ( sy1sg, sy2sg, ... )
+
+
+See also the  [BASIS](basis.html)   help file.
+
+
+------------------------------
+
+
+[](hibhelp.html) [](up_arrow.gif)  Return to  [Hibridon Help](hibhelp.html)

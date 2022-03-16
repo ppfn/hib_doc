@@ -1,0 +1,50 @@
+Restart
+
+
+###   Restarting Calculations
+
+
+------------------------------
+
+
+If you have a long-running calculation which is interrupted by a power failure
+
+or other system crash, you may be able to restart by
+
+
+- Setting the  [flag](flags.html)    RSFLAG = .TRUE.
+
+
+- and then re-running the job with the original input data,  unchanged  except for
+
+RSFLAG
+
+
+Similarly, if you finish a calculation, and wish to extend it to include addition
+
+partial waves, you can
+
+
+- Set the  [flag](flags.html)    RSFLAG = .TRUE.
+
+
+- Increase the value of   [JTOT2](jtot1.html)
+
+
+- then re-run the job with the original input data, otherwise  unchanged
+
+
+Restarting will work only if either (or both) of the flags   [WRPART](prpart.html)
+
+or   [WRXSEC](prxsec.html)
+
+were  .TRUE.  in the  input to the first job.
+
+
+------------------------------
+
+
+Go to:
+
+
+[An example](restart.ex.html)   |  [Flags](flags.html)   |  [Hibridon Help](hibhelp.html)

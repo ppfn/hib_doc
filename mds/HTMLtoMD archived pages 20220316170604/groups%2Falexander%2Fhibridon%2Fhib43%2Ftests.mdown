@@ -1,0 +1,230 @@
+tests
+
+
+###   Test Calculations
+
+
+------------------------------
+
+
+Several test calculations are included in order to help you verify the correct
+
+[installation](install.html)   of your copy of the Hibridon code.
+
+
+These test calculations involve:
+
+
+1. Determination of coupled states partial and integral cross sections
+
+for the collision of Ar with N 2  using the model potential of Pattengill
+
+et al.  1
+
+
+2. Determination of close-coupled  partial, differential, and integral cross sections
+
+for the collision of Ar with N 2  using the model potential of Pattengill
+
+et al.  1
+
+
+3. Verification of proper functioning of the  [restart](restart.html)   option and code linking with  -b
+
+[option](linking.html)   using CC and CS  partial and integral cross sections
+
+for the collision of Ar with N 2  using the model potential of Pattengill
+
+et al.  1
+
+
+4. Determination of close-coupled   integral, differential, alignment, and steric cross sections
+
+for the collision of Ar with NO using the CEPA potential of Alexander 2
+
+
+5. Determination of  fluxes and wavefunction
+
+for the collision of Ar with N 2  using the model potential of Pattengill
+
+et al.  1
+
+
+6. Verification of the proper functioning of the multiple-collision-energy capability using
+
+CC calculations
+
+for the collision of Ar with N 2  using the model potential of Pattengill
+
+et al.  1
+
+
+7. Determination of  fluxes and wavefunction
+
+for the photodissociation of CH 3 I using the  potential of Shapiro 3  as
+
+modified by Guo and Schatz.
+
+
+8. Determination of energies for bound states of the B( 2  P )+ o -H 2  complex using the ab initio
+
+potential of Alexander. 6
+
+
+9. Determination of close-coupled integral cross sections for the collision of Ar with OH(X)
+
+using the UMP4 potential of Klos  et al.  7
+
+
+:. Determination of partial and integral cross sections for the collision of He with H 2 O using the SAPT
+
+potential of Patkowski  et al.  8
+
+
+;. Determination of partial and integral cross sections for the collision of He with CO using the SAPT
+
+potential of Moszynski  et al.  9
+
+
+<. Determination of integral hyperfine-resolved cross sections for the collision of He with CN( X ) using the ab initio
+
+potential of Lique  et al.  10
+
+
+1.	M. D. Pattengill, R. A. LaBudde, and R. B. Bernstein, J. Chem. Phys.  55 ,
+
+5517 (1971)
+
+
+2.	M. H. Alexander, J. Chem. Phys.  99 , 7725 (1993).
+
+
+3.  M. Shapiro, J. Phys. Chem.  90 , 3644 (1986).
+
+
+4.  H. Guo and G. C. Schatz, J. Chem. Phys.  93 , 393 (1990);
+
+
+H. Guo, K. Q. Lao, G. C. Schatz, and A. D. Hammerich,  ibid.   94 , 6562 (1991).
+
+
+5.	B. Follmeg, P. Rosmus, and H.-J. Werner, J. Chem. Phys.  93 , 4687 (1990).
+
+
+6.	M. H. Alexander, J. Chem. Phys.  99 , 6014 (1993).
+
+
+7.  J. Klos, G. Chalasinski, M. T. Berry, R. A. Kendall, R. Burcl, and M. M. Szczesniak,
+
+J. Chem. Phys.  112 , 4952 (2000).
+
+
+8.  K. Patkowski, T. Korona, R. Moszynski, B. Jeziorski, and K. Szalewicz, J. Mol. Struct.  591 ,
+
+231 (2002).
+
+9. R. Mozynski, ...
+
+
+10.  F. Lique, A. Spielfiedel,N. Feautrier,I. F. Schneider, J. Klos,
+
+and M, H. Alexander,J.Chem. Phys.  132 , 024303, 2010
+
+
+------------------------------
+
+
+These tests can be run by executing the command
+
+
+bin/hibtest
+
+Execution of this command creates a number of  files in a new directory  testnew .
+
+When the tests are done you should compare (using the UNIX  diff  command) the following  files in the directory
+
+testnew  with the corresponding
+
+canonical files in the directory  tests :
+
+
+1.  Cstest1.ics, Cstest1.pcs, Cstest1.psc, Cstest1.xsc
+
+
+2.  Csbtest1.ics, Csbtest1.pcs, Csbtest1.psc, Csbtest1.xsc
+
+
+3.  Cctest1.ics, Cctest1.pcs, Cctest1.psc, Cctest1.xsc,
+
+Ccdxsec1.dcs,  Ccdxsec1.xsc
+
+
+4.  Ccbtest1.ics, Ccbtest1.pcs, Ccbtest1.psc, Ccbtest1.xsc
+
+
+5.  Ccrstest1.ics, Ccrstest1.pcs, Ccrstest1.psc, Ccrstest1.xsc
+
+
+6.  Cc.flx, Cc.psi
+
+
+7.  Arno_test1.ics, Arno_test1.xsc
+
+
+8.  Mltien1.xxx-Mltien6.xxx , where the extension  xxx  is either  ics
+
+or  pcs .  Also
+
+Mltien4.xxsc  and  Mltien6.xxsc .
+
+
+9.  Multien1.xxx-Multien6.xxx , where the extension  xxx  is either  ics  or  pcs .
+
+
+:.  Ch3itest.flx, Ch3itest.psi
+
+
+;.  Vfit_test1.ics, Vfit_test1.tcs, Vfit_test1.xsc
+
+
+<.  Boh2_bound.evl
+
+
+=.  Aroh_jtst1.xsc
+
+
+>.  Aroh_jtst1.ics
+
+
+Your output should be identical to the  files in directory  tests  to at least 7 decimal places,
+
+except  in the cases of the  .flx  files, where there might be considerable
+
+disagreement in the last column.  This column contains the sum of the individual
+
+channel fluxes.  If these sums are small (  -10 ), the  differences in the
+
+values, which may be sizeable, are only a reflection of differences in the rounding algorithms
+
+used by different compilers.
+
+
+To compare all results automatically, run the command
+
+
+compare.com | more
+
+
+On an Apple computer, a visual comparison can be obtained by running the command
+
+
+compare_OSX.com
+
+
+------------------------------
+
+
+Go to:
+
+
+[Examples](examples.html)   |  [Hibridon Help](hibhelp.html)

@@ -1,0 +1,271 @@
+system
+
+
+###   Basis Subroutines
+
+
+------------------------------
+
+
+For each of the twelve collision  [systems](system.html)   that can
+
+currently be treated by the Hibridon package, the channel list, channel
+
+energies, and coupling matrix elements of the potential are determined
+
+by an appropriate BASIS subroutine.  This is done before the propagation
+
+is initiated.  A specific description of these particular BASIS subroutines can
+
+be obtained by clicking the button for the following cases:
+
+
+The appropriate BASIS (and  [SYSDAT](sysdat.html)   subroutines are selected
+
+by the input parameter BASISTYP, whose value is the index of the following ordered list.
+
+
+To print out the list of system dependent parameters, enter
+
+
+BASISTY=i
+
+
+where  i  is an integer ranging from 0 to 15, and 99.  Then enter
+
+
+SHOW
+
+
+The subsequent command
+
+
+save=test.inp
+
+
+will print out a sample input file called  Test.inp , which you can
+
+then examine
+
+
+Basis Routines  (click the buttons for a further description)
+
+
+[](ba1sg.html) [](rightarrowsmall.gif)
+
+1.
+
+A  1  ![](sigma12.gif)  Molecule and a Spherical Atom
+
+
+Ref.  W. A. Lester, Jr., Meth. Comput. Phys.  10 , 211 (1971).
+
+
+------------------------------
+
+
+[](ba2sg.html) [](rightarrowsmall.gif)
+
+2. A  2  ![](sigma12.gif)  Molecule and a Spherical Atom
+
+
+Ref.  M. H. Alexander, J. Chem. Phys.  76 , 3637 (1982).
+
+
+------------------------------
+
+
+[](ba2pi.html) [](rightarrowsmall.gif)
+
+3.
+
+A  2  ![](pismall.gif)  Molecule and a Spherical Atom
+
+
+Ref.  M. H. Alexander, J. Chem. Phys.  76 , 5974 (1982);
+
+M. H. Alexander, Chem. Phys.  92 , 337 (1985);
+
+G. C. Corey and M. H. Alexander, J. Chem. Phys.  85 , 5652 (1986).
+
+
+------------------------------
+
+
+[](ba1del.html) [](rightarrowsmall.gif)
+
+4. A  1  ![](deltasmall.gif)  molecule and a spherical atom
+
+
+Ref. D. G. Sauder, D. Patel-Misra, and P. J. Dagdigian, J. Chem. Phys.  91 , 5316 (1989).
+
+
+------------------------------
+
+
+[](ba2del.html) [](rightarrowsmall.gif)
+
+5. A  2  ![](deltasmall.gif)  molecule and a spherical atom
+
+
+Ref.  B. Nizamov, P. J. Dagdigian, Y.-R. Tzeng, and M. H. Alexander,
+
+J. Chem. Phys.  115 , 800 (2001).
+
+
+------------------------------
+
+
+[](basgpi.html) [](rightarrowsmall.gif)
+
+6. Collisional Mixing of  2  ![](pismall.gif)  and  2  ![](sigma12.gif)  States of a Diatomic Molecule induced by a Spherical Atom
+
+
+Ref.  M. H. Alexander and G. C. Corey, J. Chem. Phys.  84 , 100 (1986);
+
+H.-J. Werner, B. Follmeg, M. H. Alexander, and D. Lemoine,  ibid.   91 , 5425 (1989).
+
+
+------------------------------
+
+
+[](bapi.html) [](rightarrowsmall.gif)
+
+7. Collisions of a Molecule in a  1  ![](pismall.gif) ,  2  ![](pismall.gif) , or  3  ![](pismall.gif)  State with a Spherical Atom
+
+
+Ref.  M. H. Alexander, J. Chem. Phys.  76 , 5974 (1982);
+
+M. H. Alexander, Chem. Phys.  92 , 337 (1985);
+
+G. C. Corey and M. H. Alexander, J. Chem. Phys.  85 , 5652 (1986);
+
+D. Lemoine, G. C. Corey, M. H. Alexander, and J. Derouard, Chem. Phys.  118 , 357 (1987).
+
+
+------------------------------
+
+
+[](bastp.html) [](rightarrowsmall.gif)
+
+8. A Singlet Symmetric Top Molecule and a Spherical Atom
+
+
+Ref.  S. Green, J. Chem. Phys.  64 , 3463 (1976);  67 , 816 (1979).
+
+
+------------------------------
+
+
+[](baastp.html) [](rightarrowsmall.gif)
+
+9. A Singlet Asymmetric top and a Spherical Atom
+
+
+Ref.  B. J. Garrison  et al. , J. Chem. Phys.  65 , 2193 (1976);
+
+S. Green, J. Chem. Phys.  64 , 3463 (1976);  67 , 816 (1979).
+
+
+------------------------------
+
+
+[](ba13p.html) [](rightarrowsmall.gif)
+
+
+:. An Atom in a  1  P  and/or  3  P  state and a Spherical Atom
+
+
+Ref.  B. Pouilly, T. Orlikowski, and M. H. Alexander, J. Phys. B  18 , 1953 (1985);
+
+B. Pouilly and M. H. Alexander, J. Chem. Phys.  86 , 4790 (1987);
+
+B. Pouilly, J.-M. Robbe, and M. H. Alexander,  ibid.   91 , 1658 (1989).
+
+
+------------------------------
+
+
+[](ba2mol.html) [](rightarrowsmall.gif)
+
+;. Two  1  ![](sigma12.gif)  Diatomics
+
+
+Ref.  S. Green, J. Chem. Phys.  62 , 2271 (1975);
+
+A. E. DePristo and M. H. Alexander,   ibid.   66 , 1334 (1977);
+
+M. H. Alexander,   ibid.   73 , 5135 (1980).
+
+
+------------------------------
+
+
+[](bastpln.html) [](rightarrowsmall.gif)
+
+<. A Symmetric top and a Linear Molecule
+
+
+Ref.  C. Rist, M. H. Alexander, and
+
+P. Valiron, J. Chem. Phys.  98 , 4662 (1993).
+
+
+------------------------------
+
+
+[](ba22p.html) [](rightarrowsmall.gif)
+
+=. Collisions of an atom in a  2  P  state and an atom in a  2  S  electronic state
+
+
+Ref.  M. H. Alexander, B. Pouilly, and T. Duhoo, J. Chem. Phys.  99 , 1752 (1993).
+
+
+------------------------------
+
+
+[](bah2p.html) [](rightarrowsmall.gif)
+
+>. An atom in a  2  P  electronic state and a Homonuclear Diatomic
+
+
+Ref.  M.-L. Dubernet and J. M. Hutson, J. Chem. Phys.  101 ,
+
+1939 (1994).
+
+
+------------------------------
+
+
+[](bah3p.html) [](rightarrowsmall.gif)
+
+?. An atom in a  3  P  electronic state and a Homonuclear Diatomic
+
+
+Ref.  M.-L. Dubernet and J. M. Hutson, J. Chem. Phys.  101 ,
+
+1939 (1994).
+
+
+------------------------------
+
+
+1.
+
+Setting the parameter  BASISTYPE  = 99 allows the user to define his own
+
+basis routine, in addition to the fifteen types enumerated above.  For an example see the
+
+file  hib41/src/pot/pot_ch3i.f
+
+
+------------------------------
+
+
+Go to:
+
+
+[Systems](system.html)   |  [Potentials](potlist.html)
+
+|  [SYSDAT](sysdat.html)   |  [Hibridon Help](hibhelp.html)

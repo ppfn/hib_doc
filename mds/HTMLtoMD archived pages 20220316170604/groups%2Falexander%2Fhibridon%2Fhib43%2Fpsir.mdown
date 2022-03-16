@@ -1,0 +1,43 @@
+psir.html
+
+![](psir.gif)
+
+
+------------------------------
+
+
+Real part of scattering wavefuntion from calculation illustrated
+
+in the preceding  [example](psir.ex.html)  .
+
+The curves display the various channel components of the scattering wavefunction,
+
+with
+
+
+red:  j  = 0
+
+
+green:  j  = 2
+
+
+blue:  j  = 4
+
+
+brown:  j  = 6
+
+
+cyan:  j  = 8
+
+
+Note that the  j  = 8 component in the wavefunction goes to zero
+
+asymptotically, since this channel is closed.
+
+
+------------------------------
+
+
+Return to:
+
+[PSI example](psi.ex.html)   |  [Examples](examples.html)   |  [Hibridon Help](hibhelp.html)
