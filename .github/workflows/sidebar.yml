@@ -14,10 +14,11 @@ jobs:
       uses: actions/checkout@v3
       with:
         repository: ppfn/hib_doc.wiki
-    - name: LS the curr dir
+    - name: Install github-wiki-sidebar
+      run: npm install github-wiki-sidebar -g
+      
+    - name: Generate sidebar menu
       run: |
-        ls
         git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
         git config --local user.name "github-actions[bot]"
-        npm install github-wiki-sidebar -g
-         github-wiki-sidebar --silent --git-push
+       github-wiki-sidebar --silent --git-push
