@@ -15,10 +15,9 @@ jobs:
       with:
         repository: ppfn/hib_doc.wiki
     - name: LS the curr dir
-      run: ls
-#          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
-#          git config --local user.name "github-actions[bot]"
-#         git clone https://github.com/ppfn/hib_doc.wiki.git
-#         cd hib_doc.wiki
-#         npm install github-wiki-sidebar -g
-#          github-wiki-sidebar --silent --git-push
+      run: |
+        ls
+        git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+        git config --local user.name "github-actions[bot]"
+        npm install github-wiki-sidebar -g
+         github-wiki-sidebar --silent --git-push
