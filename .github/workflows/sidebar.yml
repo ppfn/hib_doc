@@ -11,7 +11,10 @@ jobs:
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
       - name: Install github-wiki-sidebar
-        run: npm install github-wiki-sidebar -g
+        run: |
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          npm install github-wiki-sidebar -g
 
       - name: Generate the sidebar
         run: github-wiki-sidebar --silent --git-push
