@@ -7,16 +7,15 @@ jobs:
   genmenu:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-        with:
-          repo-token: ${{ secrets.GITHUB_TOKEN }}
-          fetch-depth: 0
-      - name: Clone wiki repository
-      - uses: actions/checkout@v3
-        with:
-          repository: ppfn/hib_doc.wiki
-      - name: LS the curr dir
-        run: ls
+    - name: Clone hib_doc repo
+      uses: actions/checkout@v3
+      
+    - name: Clone wiki repository
+      uses: actions/checkout@v3
+      with:
+        repository: ppfn/hib_doc.wiki
+    - name: LS the curr dir
+      run: ls
 #          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
 #          git config --local user.name "github-actions[bot]"
 #         git clone https://github.com/ppfn/hib_doc.wiki.git
