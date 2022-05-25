@@ -1,10 +1,7 @@
 name: Update Wiki sidebar menu
 
-
-
 on:
   gollum
-  workflow_dispatch:
 
 jobs:
   genmenu:
